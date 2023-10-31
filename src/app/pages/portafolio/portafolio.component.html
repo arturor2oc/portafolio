@@ -1,0 +1,111 @@
+<!--Potafolio-->
+<section id="portafolio" class="container py-5">
+    <h1 class="text-center">Portafolio</h1>
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 my-3 d-flex justify-content-center align-items-center">
+            <!--d-flex justify-content-center align-items-center para centrar el card mediante flex y de forma responsiva, con position no se pudo y con mx-auto no era resposiva-->
+            <div class="card" style="width: 25rem;"> <!-- mx-auto se utiliza para centrar un elemento -->
+                <img src="assets/img/gestorincidencias.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Gestor de incidencias</h5>
+                    <div *ngIf="show[0]; else noGes">
+                        <p class="portafolio-text">Una API REST diseñada para la gestión de incidencias en un entorno
+                            de trabajo en equipo. Las incidencias se registran con un título, una descripción , una
+                            clasificación de severidad, etc. La API proporciona un conjunto de endpoints para crear,
+                            listar, filtrar según la severidad o el estado, modificar y eliminar incidencias. Esta API
+                            facilita la administración eficiente de las incidencias en el equipo de trabajo, permitiendo
+                            un seguimiento detallado y personalizado de las mismas. <a class="leer"
+                                (click)="showMsg('uno')">{{msgLink}}</a></p>
+                    </div>
+                    <div>
+                        <ng-template #noGes>
+                            <p class="portafolio-text">Una API REST diseñada para la gestión de incidencias en un
+                                entornode trabajo en equipo. Las incidencias se registran con un título,
+                                una descripción...
+                                <a class="leer" (click)="showMsg('uno')">{{msgLink}}</a>
+                            </p>
+                        </ng-template>
+                    </div>
+                    <div>
+                        <a href="https://arturor2oc.github.io/app-indencias/" class="btn colorbtn"
+                            target="_blank">Ver</a>
+                        <a href="https://github.com/arturor2oc/api-incidencias" class="btn colorbtn mx-3"
+                            target="_blank">Codigo Git</a>
+                        <span class="portafolio-tecnologias">Nodejs - MongoDB - Angular</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 my-3 d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 25rem;">
+                <img src="assets/img/ecommerce.png" class="card-img-top" alt="2">
+                <div class="card-body">
+                    <h5 class="card-title">Ecommerce</h5>
+                    <div *ngIf="show[1]; else noEco">
+                        <p class="portafolio-text"> API REST creada para un entorno de comercio electrónico ofrece una
+                            amplia gama de capacidades para gestionar productos, categorías, ventas y usuarios. Sus
+                            funcionalidades abarcan desde la visualización y búsqueda de productos y categorías, hasta
+                            la creación, edición y eliminación de los mismos. Además, esta API cuenta con un panel de
+                            ventas que permite el seguimiento detallado de las transacciones realizadas. Todo ello se
+                            complementa con una gestión de usuarios y roles para garantizar un control eficaz de los
+                            permisos y el acceso en la plataforma. <a class="leer"
+                                (click)="showMsg('dos')">{{msgLink}}</a></p>
+                    </div>
+                    <div>
+                        <ng-template #noEco>
+                            <p class="portafolio-text">API REST creada para un entorno de comercio electrónico ofrece
+                                una
+                                amplia gama de capacidades para gestionar productos, categorías, ventas...
+                                <a class="leer" (click)="showMsg('dos')">{{msgLink}}</a>
+                            </p>
+                        </ng-template>
+                    </div>
+                    <a href="#" class="btn colorbtn" target="_blank">Ver</a>
+                    <a href="https://github.com/arturor2oc/EcommerceNET" class="btn colorbtn mx-3"
+                        target="_blank">Codigo Git</a>
+                    <span class="portafolio-tecnologias">C# - SqlServer - Blazor</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--
+    <div class="row">
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 my-3 d-flex justify-content-center align-items-center">
+            <div class="card" style="width: 25rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk
+                        of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                    <a href="#" class="btn btn-primary">Codigo Git</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 my-3 d-flex justify-content-center align-items-center">
+            <div class="card mx-auto" style="width: 25rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 2</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the
+                        bulk
+                        of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                    <a href="#" class="btn btn-primary">Codigo Git</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+-->
+
+</section>
+<!--Fin de portafonio-->

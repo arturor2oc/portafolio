@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+	margin: 0;
+	/* Fondo de la pagina */
+	background: white;
+}
+
+.bg-home {
+	height: 100vh;
+	background-image: url(assets/img/fond.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: blur(5px);
+}
+
+.bg-text {
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: left;
+}
+
+.titulo {
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.about-text{
+	font-size: 20px;
+	text-align: justify;
+}
+
+.skill {
+	font-size: 100px;
+	line-height: 60px;
+}
+
